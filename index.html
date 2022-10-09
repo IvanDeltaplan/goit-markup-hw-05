@@ -11,6 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/styles.css" />
     
     
@@ -30,7 +32,10 @@
        <li>
         
         
-        <a href="./index.html" class="hero-link link-current">студія</a></li>
+        <a href="./index.html" class="hero-link link-current">студія</a>
+      </li>
+
+
        <li><a href="./portfolio.html" class="hero-link"
            >портфоліо</a>
        </li>
@@ -67,7 +72,7 @@
       <section class="slogan-bgcolor">
         <div class="container-slogan">
         <h1 class="slogan">Ефективні рішення для вашого бізнесу</h1>
-                <button type="button" class="slogan-button">Замовити послугу</button> 
+                <button data-modal-open type="button" class="slogan-button">Замовити послугу</button> 
                 </div>
       </section>
       
@@ -135,14 +140,40 @@
         <h3 class="about-title">Чим ми займаємося</h3>
 
         <ul class="header-list-img">
-          <li>
+          
+          
+            <li><div class="about-text-box">
+
             <img src="images/img.png" alt=" 1" width="370" height="294" />
+            
+            <p class="aboutus-text">
+
+              Десктопні додатки
+            </p>
+            </div>
           </li>
+          
+
+
           <li>
+            <div class="about-text-box">
             <img src="images/img1.png" alt="2" width="370" height="294" />
+          <p class="aboutus-text">
+          
+            Мобільні додатки
+          </p>
+          
+          </div>
+          
           </li>
           <li>
+            <div class="about-text-box">
             <img src="images/img2.png" alt="3" width="370" height="294" />
+          <p class="aboutus-text">
+          
+            Дизайнерські рішення
+          </p>
+          </div>
           </li>
         </ul>
       </div>
@@ -507,6 +538,25 @@
       </div>
     </div>
     </footer>
+<div class="backdrop is-hidden" data-modal>
+
+      
+      <div class="modal">
+         <button type="button" class="modal-btn" data-modal-close>
+            
+            <svg class="icon icon-cancel-circle" width="70" height="18">
+              <use href="./images/symbol.svg#icon-cancel-circle"></use>
+            </svg>
+          </svg>  
+        </button>
+      </div>
     
+</div>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./js/modal.js"></script>   
+     
   </body>
 </html>
